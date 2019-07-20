@@ -1,0 +1,25 @@
+<h1>count</h1>
+
+<a href="{% url 'home' %}">Start again:</a> 
+
+<h1> full text:</h1>
+{{ fulltext }}
+
+<h2> the total count is: 
+    {{len}}
+</h2>
+
+<h2> the max word is 
+    {{max_word}}
+</h2>
+
+<h2> the dictionary is  <br/>
+    
+{% for i, j in dict_cnt %}
+
+{{ i }} : 
+{{ j }}
+<br/>
+
+{% endfor %}
+</h2>
